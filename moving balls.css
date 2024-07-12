@@ -1,0 +1,85 @@
+*{
+    background-image: radial-gradient(white,black);
+}
+#h1{
+    border: 15px solid red;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(lightblue,lightgreen,yellow);
+    border-radius: 20%;
+     position: relative;
+    top: 100px;
+    left: 300px; 
+   
+}
+#h2{
+    border: 5px dashed black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    animation-name: load;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes load{
+    0%{
+        
+        position: absolute;
+        top: -1px;
+        left: -1x;
+        scale: 1;
+        border-radius: 50%;
+    }
+   25%{ 
+   
+        position: absolute;
+        top: 138px;
+        left: -1px;
+        border-radius: 50%;
+    }
+
+    
+     50%{
+   
+        position: absolute;
+        top: 131px;
+        left: 140px;
+        scale: 1;
+        border-radius: 10%;
+    }
+    75%{
+    
+        position: absolute;
+        top: -1px;
+        left: 131px;
+        scale: .2;
+        border-radius: 0%;
+        background-image: radial-gradient(white,brown);
+
+    }
+   80%{
+ 
+        border-radius: 50%;
+    }
+    100%{
+  
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        scale: 1;
+        border-radius: 50%;
+    }
+    
+}
+@keyframes anim {
+    100%{
+        transform:rotateZ(360deg);
+    }
+    
+}
+
+    
+
